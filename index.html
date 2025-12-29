@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shervin Studio — Art Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="lang-en">
+  <div class="site-wrapper">
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="site-logo">SHERVIN STUDIO</div>
+        <button class="nav-toggle"><span></span><span></span><span></span></button>
+        <nav class="nav-main">
+          <a href="gallery.html" data-i18n-key="nav.gallery">Gallery</a>
+          <a href="exhibitions.html" data-i18n-key="nav.exhibitions">Exhibitions</a>
+          <a href="about.html" data-i18n-key="nav.about">About</a>
+          <a href="contact.html" data-i18n-key="nav.contact">Contact</a>
+          <a href="shop.html" data-i18n-key="nav.shop">Shop</a>
+          <div class="lang-switch">
+            <button data-lang="en" class="active">EN</button>
+            <button data-lang="fa">FA</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="hero">
+          <div>
+            <div class="hero-kicker" data-i18n-key="hero.kicker">Art portfolio</div>
+            <h1 class="hero-title" data-i18n-key="hero.title">
+              Shervin — Visual stories in motion
+            </h1>
+            <p class="hero-subtitle" data-i18n-key="hero.subtitle">
+              Selected works across abstraction, nature, portraits and conceptual series.
+            </p>
+            <div class="hero-cta">
+              <a href="gallery.html" class="button" data-i18n-key="hero.cta.gallery">Enter gallery</a>
+              <a href="about.html" class="button button-secondary" data-i18n-key="hero.cta.about">
+                Read story
+              </a>
+            </div>
+          </div>
+          <div class="hero-preview">
+            <div class="hero-preview-inner">
+              Hero preview area (later you can place a key artwork here)
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>&copy; <span id="year"></span> Shervin Studio</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>
